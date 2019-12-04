@@ -122,4 +122,15 @@ function articleHolder(title,date,content,firstParagraph,secondParagraph,thirdPa
   const articleP2= document.createElement('p')
   const articleP3 = document.createElement('p')
   const articleExpand= document.createElement('span')
+  
+  articleDiv.classList.add('article')
+  articleDate.classList.add('date')
+  articleExpand.classList.add('expandButton')
+
+  
+
+    articleExpand.addEventListener('click', event => {
+
+      articleExpand.classList.toggle('article-open')
+    })
 }
