@@ -117,7 +117,6 @@ const data = [
 function articleHolder(
   title,
   date,
-  content,
   firstParagraph,
   secondParagraph,
   thirdParagraph
@@ -145,6 +144,13 @@ function articleHolder(
   articleExpand.addEventListener("click", event => {
     articleExpand.classList.toggle("article-open");
   });
+
+articleTitle.textContent = title
+articleDate.textContent = date
+articleP1.textContent = firstParagraph
+articleP2.textContent= secondParagraph
+articleP3.textContent = thirdParagraph
+
   return articleDiv
 }
 
